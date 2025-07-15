@@ -1,52 +1,57 @@
-# 📦 VirtualShop (vS) - README Introducción
+# 📦 ITX Mobile Store Backend
 
-Bienvenido a **VirtualShop (vS)**, un proyecto de tienda online completo, diseñado para ofrecer una experiencia de compra moderna, segura y eficiente.
+Este proyecto es un **backend RESTful** desarrollado en **Java con Spring Boot**, que expone un servicio para obtener productos relacionados mediante un cliente externo.
 
-Este proyecto está estructurado para cubrir **todas las funcionalidades básicas y avanzadas** de un comercio electrónico, incluyendo gestión de productos, clientes, pedidos y más.
+## 🚀 Requisitos
 
----
+- Java 17 o superior
+- Maven 3.6+
+- Git
+- (Opcional) Docker
 
-## 🛠 Tecnologías principales
+## ⚙️ Cómo ejecutar
 
-- **Backend**: Java 17+ / Spring Boot  
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla o Frameworks)  
-- **Base de datos**: MySQL / PostgreSQL  
-- **ORM**: Hibernate / JPA  
-- **Seguridad**: Spring Security (login, roles, autenticación)  
-- **API REST**: Para interacción frontend-backend  
-- **Otros**: JWT, Lombok, Maven/Gradle  
+1. Clona el repositorio:
 
----
+   ```bash
+   git clone https://github.com/tu-usuario/itx-mobile-store.git
+   cd itx-mobile-store
+   ```
+## Compila y ejecuta la aplicación:
 
-## 🚀 Características principales
+```bash
+mvn spring-boot:run
+```
+La aplicación se levantará en:
+http://localhost:5000
 
-- Registro y autenticación de usuarios  
-- Catálogo de productos (listar, buscar, filtrar)  
-- Carrito de compras  
-- Gestión de pedidos y pagos  
-- Administración de usuarios, productos y pedidos (panel de administración)  
-- Roles de usuario (cliente, administrador)  
-- Seguridad en endpoints y datos  
-- API REST modularizada  
-- Documentación clara y mantenible  
+## 🧪 Ejecutar Tests
+Puedes ejecutar los tests con:
 
----
+```bash
+mvn test
+```
+## 📘 Swagger - Documentación de la API
+La documentación Swagger está disponible en la siguiente URL:
 
-## 📚 Estructura de la documentación
+http://localhost:5000/swagger-ui/index.html#/product-related-controller/getProductRelated
 
-Este repositorio se organiza en varios archivos de documentación:
+## 📂 Estructura destacada
+* ProductRelatedService: Servicio principal que orquesta la obtención de productos relacionados.
+* ProductClient: Cliente Feign que interactúa con otros servicios.
+* VSExceptionHandler: Manejador global de excepciones.
+* ServiceExceptionDto: DTO de error estándar para respuestas de error uniformes.
 
-| Archivo | Descripción |
-|:--------|:------------|
-| [README_FUNCIONAL.md](./doc/README_FUNCIONAL.md) | Explica las funcionalidades que debe cumplir la aplicación desde el punto de vista del usuario final. |
-| [README_TECNICO.md](./doc/README_TECNICO.md) | Explica detalles de arquitectura, tecnologías usadas y aspectos técnicos para el equipo de desarrollo. |
+## 🛠️ Tecnologías usadas
+* Java 17
+* Spring Boot
+* Spring Web
+* Spring Security (opcional o desactivado)
+* Feign Client
+* Swagger / OpenAPI
+* Lombok
+* JUnit 5 / Mockito
 
----
-
-## 🎯 Objetivo final
-
-Desarrollar una tienda online profesional, escalable y segura, aplicando **buenas prácticas de desarrollo backend y frontend**, ideal tanto para aprender como para desplegar un proyecto real.
-
----
-
-# ✨ ¡A construir VirtualShop!
+## 🧑 ‍💻 Autor
+Este backend fue desarrollado como parte del examen de acceso al equipo de ITX Mobile Store.
+Para más detalles o soporte técnico, contacta al equipo de desarrollo.
