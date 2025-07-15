@@ -52,6 +52,6 @@ http://localhost:5000/swagger-ui/index.html#/product-related-controller/getProdu
 * Lombok
 * JUnit 5 / Mockito
 
-🧑## ‍💻 Autor
+## 🧑 ‍💻 Autor
 Este backend fue desarrollado como parte del examen de acceso al equipo de ITX Mobile Store.
 Para más detalles o soporte técnico, contacta al equipo de desarrollo.
